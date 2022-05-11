@@ -1,0 +1,190 @@
+@font-face {
+  font-family: fantasque;
+  src: url(./fantasquesansmono-regular.otf);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: fantasque;
+}
+
+main {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  font-family: fantasque;
+}
+
+nav .logo {
+  max-width: 100px;
+  height: 5rem;
+}
+
+/* Top Sky Section */
+.sun {
+  max-width: 15rem;
+  width: 15vw;
+  /* margin: 0; */
+  z-index: 15;
+  position: fixed;
+  left: 43vw;
+  top: 20%;
+  /* display: grid; */
+}
+
+.sky {
+  position: absolute;
+  display: block;
+  /* overflow: hidden; */
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* left: -25vw; */
+}
+
+.sky img {
+  width: 100vw;
+}
+.sky-1 {
+  top: 5rem;
+  z-index: 1;
+}
+
+.sky-2 {
+  top: 10rem;
+  z-index: 2;
+}
+
+.sky-3 {
+  top: 15rem;
+  z-index: 3;
+}
+.sky-4 {
+  top: 25rem;
+  z-index: 4;
+}
+.sky-5 {
+  top: 35rem;
+  z-index: 5;
+}
+
+/* Teton mountains and forest section */
+.tetons {
+  position: absolute;
+  top: 40rem;
+  z-index: 17;
+}
+
+.forest-1 {
+  position: absolute;
+  z-index: 18;
+  top: 48rem;
+  width: 100%;
+}
+
+.forest-2 {
+  position: absolute;
+  z-index: 19;
+  top: 55rem;
+  width: 100%;
+}
+
+/* Bio section */
+.bio {
+  position: absolute;
+  z-index: 25;
+  top: 90rem;
+  left: 6rem;
+}
+
+.bio .transparent-rect {
+  width: 80vw;
+  font-size: 1.5em;
+  height: 15rem;
+  padding: 2rem;
+  background-color: rgba(185, 204, 209, 0.88);
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0 1rem;
+}
+
+.bio .transparent-rect img {
+  width: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  height: 90%;
+}
+
+/* River and grass gradient */
+.grass {
+  position: absolute;
+  z-index: 15;
+  top: 60rem;
+}
+
+.river {
+  position: absolute;
+  z-index: 17;
+  top: 60rem;
+}
+
+/* Arches */
+.sunset {
+  position: absolute;
+  z-index: 14;
+  top: 245rem;
+}
+
+.la-sal {
+  position: absolute;
+  z-index: 16;
+  top: 258rem;
+}
+
+.arch-back {
+  position: absolute;
+  z-index: 16;
+  top: 264rem;
+}
+
+.arch {
+  position: absolute;
+  z-index: 17;
+  top: 235rem;
+  /* right: 10rem; */
+}
+
+.arch-front {
+  position: absolute;
+  z-index: 17;
+  top: 273rem;
+}
+
+/* Zion section */
+.temple {
+  position: absolute;
+  z-index: 17;
+  top: 370rem;
+}
+
+footer {
+  position: absolute;
+  top: 422rem;
+  z-index: 20;
+  width: 100vw;
+  height: 10rem;
+  background-color: #141160;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
